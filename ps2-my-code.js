@@ -11,12 +11,9 @@
 
 function addOne(x) {
 
- for(tests in runTests[1]){
-  x= tests;
+  return x + 1
   
-  
- }
- return x + 1;
+
 }
 
 
@@ -26,6 +23,8 @@ function addOne(x) {
  */
 
 function largest(lst) {
+
+  return Math.max(...lst);
 
 
 }
@@ -42,11 +41,19 @@ function largest(lst) {
  */
 
 function fact(n) {
+ 
 
-  for(test in runTests[3]){
+  if (n== 0){
 
+    return 1
 
-  })
+    
+  }
+
+  else{
+
+    return n * fact (n-1);
+  }
 }
 
 /**
